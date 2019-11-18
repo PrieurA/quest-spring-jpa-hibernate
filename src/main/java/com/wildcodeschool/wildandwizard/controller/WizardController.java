@@ -38,7 +38,6 @@ public class WizardController {
             }
         }
         model.addAttribute("wizard", wizard);
-
         return "wizard";
     }
 
@@ -53,7 +52,6 @@ public class WizardController {
     public String deleteWizard(@RequestParam Long id) {
 
         repository.deleteById(id);
-
         return "redirect:/wizards";
     }
 }
